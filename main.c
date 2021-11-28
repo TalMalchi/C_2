@@ -25,6 +25,7 @@ while(true){
         printf("Please enter two numbers:\n");
         scanf(" %d %d", &x,&y);
         Fun3(x,y);
+        printf(" \n ");
     }
     else if (c=='D'){
         return 0 ;

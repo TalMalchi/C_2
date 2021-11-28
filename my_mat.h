@@ -11,7 +11,7 @@ if there is, it will print True, else, False */
 void checkPath(int, int);
 
 /* will return the shorest path between to numbers, is the isn't a path- will return -1*/
-int Fun3(int, int);
+void Fun3(int, int);
 
 
 

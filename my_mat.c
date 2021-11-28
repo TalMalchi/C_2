@@ -27,16 +27,16 @@ void checkPath(int x, int y)
         printf("True\n");
 }
 
-int Fun3(int i, int j)
+void Fun3(int i, int j)
 {
     if (mat[i][j] == 0)
     {
-        printf("-1");
+        printf("-1\n");
         //return -1;
     }
     else
         printf ("%d ", mat[i][j]);
-        //return mat[i][j];
+        
 }
 
 int checkMin_value(int i, int j)
