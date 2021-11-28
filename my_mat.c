@@ -5,7 +5,8 @@
 int mat[10][10];
 void shorestPath();
 
-void matrixValue()
+//function init the matrix by values from the user 
+void matrixValue() 
 {
     printf("enter the matrix: ");
 
@@ -17,6 +18,7 @@ void matrixValue()
     shorestPath();
 }
 
+//function check oof there is a path between 2 numbers 
 void checkPath(int x, int y)
 {
     if (mat[x][y] == 0)
@@ -27,6 +29,7 @@ void checkPath(int x, int y)
         printf("True\n");
 }
 
+//function return the shortest path between to numbers 
 void Fun3(int i, int j)
 {
     if (mat[i][j] == 0)
@@ -53,6 +56,7 @@ int checkMin_value(int i, int j)
         return i < j ? i : j;
 }
 
+//function init the same martix, but with the shorest path between every two numbers 
 void shorestPath()
 {
     for (int i = 0; i < 10; i++)
