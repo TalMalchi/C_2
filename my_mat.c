@@ -7,11 +7,11 @@ void shorestPath();
 
 void matrixValue()
 {
-    printf("enter the matrix:");
+    printf("enter the matrix: ");
 
     for (int i = 0; i < 10; i++){
         for (int j = 0; j < 10; j++){
-            scanf("%d", &mat[i][j]);
+            scanf(" %d", &mat[i][j]);
         }
     }
     shorestPath();
@@ -21,20 +21,22 @@ void checkPath(int x, int y)
 {
     if (mat[x][y] == 0)
     {
-        printf("False");
+        printf("False\n");
     }
     else
-        printf("True");
+        printf("True\n");
 }
 
 int Fun3(int i, int j)
 {
     if (mat[i][j] == 0)
     {
-        return -1;
+        printf("-1");
+        //return -1;
     }
     else
-        return mat[i][j];
+        printf ("%d ", mat[i][j]);
+        //return mat[i][j];
 }
 
 int checkMin_value(int i, int j)
